@@ -129,12 +129,100 @@ body {
 
           .image-2 {
             width: 359px;
-            position: static;
+            position: absolute;
             bottom: 0;
             right: 134px;
           }
         }
       }
     }
+  }
+}
+
+.middle-section {
+  background-color: $pink;
+  display: flex;
+  margin: $margin;
+
+  .greenBackground {
+    position: absolute;
+  }
+
+  .play_button {
+    position: absolute;
+    align-items: center;
+  }
+
+  .text-section {
+    margin: $margin ;
+  }
+
+  button {
+    all: unset;
+    padding: 1.5rem 4.375rem;
+    border-radius: 5px;
+    border: 1px;
+    background-color: $primary;
+    color: white;
+  }
+
+}
+
+.third-section {
+  background-color: $primary;
+  color: $color;
+
+  .third-section-header {
+    margin: $margin;
+  }
+
+  .third-section-boxs {
+    display: flex;
+
+    .third-section-box {
+      border: 6px white solid;
+      border-radius: 5px;
+      background-color: $color;
+      color: $black;
+      margin: $margin;
+
+      img {
+        border: 6px white solid;
+        border-radius: 5px;
+      }
+
+      .third-section-ogonianddate {
+        display: flex;
+        justify-content: space-between;
+        margin: -20px 0px 0px 8px;
+
+        .third-section-ogonianddate-ogoni {
+          color: $primary;
+        }
+
+        .third-section-ogonianddate-date {
+          align-items: center;
+          display: flex;
+        }
+      }
+
+      .third-section-text {
+        margin: 8px;
+      }
+
+      .third-section-ogoniLGA {
+        color: $primary;
+      }
+
+    }
+  }
+
+  .third-section-button {
+    all: unset;
+    padding: 1.5rem 4.375rem;
+    border-radius: 5px;
+    border: 1px;
+    background-color: $color ;
+    color: $black;
   }
 }
