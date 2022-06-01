@@ -150,7 +150,20 @@ body {
 
   .play_button {
     position: absolute;
-    align-items: center;
+    margin-top: 220px;
+    margin-left: 200px;
+    z-index: 2;
+  }
+
+  .rectanmgle_2 {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .rectangle-3 {
+    position: relative;
+    left: 20px;
+    top: 20px;
   }
 
   .text-section {
@@ -174,21 +187,26 @@ body {
 
   .third-section-header {
     margin: $margin;
+    padding-top: 10px;
+    font-size: larger;
+    text-decoration: underline 10px;
   }
 
   .third-section-boxs {
     display: flex;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
 
     .third-section-box {
-      border: 6px white solid;
+      border: 10px white solid;
       border-radius: 5px;
       background-color: $color;
       color: $black;
-      margin: $margin;
+      margin: 17px;
 
-      img {
-        border: 6px white solid;
-        border-radius: 5px;
+      .third-section-image img {
+        width: 100%;
       }
 
       .third-section-ogonianddate {
@@ -224,5 +242,49 @@ body {
     border: 1px;
     background-color: $color ;
     color: $black;
+    margin-left: 40%;
+    margin-bottom: 10px;
+  }
+}
+
+.last-section {
+  .last-section-header {
+    margin: $margin;
+    font-weight: bolder;
+  }
+
+  .last-section-images {
+    padding-bottom: 10%;
+
+    .last-section-image-first-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .last-section-image-second-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+}
+
+.footer-section {
+  border: 1px;
+  background-color: $primary;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100px;
+
+  .footer-section-text {
+    color: $color;
+
+    span {
+      font-weight: bolder;
+    }
   }
 }
